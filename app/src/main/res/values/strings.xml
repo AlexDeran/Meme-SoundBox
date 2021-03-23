@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Meme SoundBox</string>
+    <string name="France">France</string>
+    <string name="Monde">Monde</string>
+    <string name="Inconnus">Inconnus</string>
+    <string name="title_activity_fr">France</string>
+    <string name="MV">Mister<br />MV</string>
+    <string name="WTC">What the Cut</string>
+    <string name="JD">Mister<br />JDAY</string>
+    <string-array name="soundsNames">
+        <item>BRUMAAAAA</item>
+        <item>Un but somptueux !</item>
+        <item>Le coup de clim</item>
+        <item>Le coup du foulard</item>
+        <item>DOLLAR</item>
+        <item>Et peng !</item>
+    </string-array>
+</resources>

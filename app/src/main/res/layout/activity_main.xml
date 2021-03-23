@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/fond"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:src="@drawable/soundbox"/>
+
+            <Button
+                android:id="@+id/france_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:background="@drawable/francemin"
+                android:text="@string/France"
+                android:textColor="@color/orange"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="italic"
+                android:textSize="35sp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="15"
+                app:backgroundTint="#2B2B2B"
+                app:backgroundTintMode="add" />
+
+            <Button
+                android:id="@+id/monde_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:background="@drawable/earth"
+                android:text="@string/Monde"
+                android:textColor="@color/orange"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-black"
+                android:textSize="35sp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                app:backgroundTint="#2B2B2B"
+                app:backgroundTintMode="add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/mv_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:background="@drawable/mistermv"
+                app:backgroundTint="#2B2B2B"
+                app:backgroundTintMode="add" />
+
+            <Button
+                android:id="@+id/jd_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:background="@drawable/misterjday"
+                app:backgroundTint="#2B2B2B"
+                app:backgroundTintMode="add"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+            <Button
+                android:id="@+id/wtc_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_margin="8dp"
+                android:background="@drawable/wtc"
+                app:backgroundTint="#2B2B2B"
+                app:backgroundTintMode="add" />
+
+            <Button
+                android:id="@+id/inc_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:background="@drawable/inconnuslogo"
+                app:backgroundTint="#2B2B2B"
+                app:backgroundTintMode="add" />
+
+        </LinearLayout>
+
+</LinearLayout>
