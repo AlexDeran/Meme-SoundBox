@@ -9,13 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_sb_round"
         android:supportsRtl="true">
         <activity
-            android:name=".FrActivity"
-            android:label="@string/title_activity_fr"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SBTheme.Base"
             />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:theme="@style/Theme.Design.NoActionBar"
             android:screenOrientation="portrait"
             >

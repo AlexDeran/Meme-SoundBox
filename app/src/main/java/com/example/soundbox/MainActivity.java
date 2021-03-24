@@ -1,48 +1,88 @@
 package com.example.soundbox;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.View;
+import android.widget.ImageButton;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView mAppName;
-    Button mFR;
-    Button mMonde;
-    Button mMV;
-    Button mJD;
-    Button mWTC;
-    Button mInconnus;
+    private ImageButton mMuteBtn;
+    private MediaPlayer mPlayer;
+    private ImageButton mButton_1;
+    private ImageButton mHomeBtn;
 
+    Toolbar mToolbar;
+
+    ArrayList<SoundObject> soundList = new ArrayList<>();
+
+    RecyclerView mSoundView;
+
+    SoundboxRecyclerAdapter mSoundAdapter = new SoundboxRecyclerAdapter(soundList);
+
+    RecyclerView.LayoutManager mSoundLayoutManager;
+
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFR = findViewById(R.id.france_btn);
-        mMonde = findViewById(R.id.monde_btn);
-        mMV = findViewById(R.id.mv_btn);
-        mJD = findViewById(R.id.jd_btn);
-        mWTC = findViewById(R.id.wtc_btn);
-        mInconnus = findViewById(R.id.inc_btn);
+       mButton_1 = findViewById(R.id.imageViewItem);
+       mMuteBtn = findViewById(R.id.mute_btn);
 
-        mFR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent FRActivityIntent = new Intent(MainActivity.this, FrActivity.class);
-                startActivity(FRActivityIntent);
-            }
-        });
+        mToolbar = findViewById(R.id.soundbox_toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        List<String> nameList = Arrays.asList(getResources().getStringArray(R.array.soundsNames));
 
+        SoundObject[] soundItems = {
+                new SoundObject(nameList.get(0), R.raw.bruma),
+                new SoundObject(nameList.get(1), R.raw.but_somptueux),
+                new SoundObject(nameList.get(2), R.raw.coup_de_clim),
+                new SoundObject(nameList.get(3), R.raw.coup_du_foulard),
+                new SoundObject(nameList.get(4), R.raw.dollar),
+                new SoundObject(nameList.get(5), R.raw.et_peng)};
+
+        soundList.addAll(Arrays.asList(soundItems));
+
+        mSoundView = findViewById(R.id.soundbox_recycler);
+
+        mSoundLayoutManager = new GridLayoutManager(this,3);
+
+        mSoundView.setLayoutManager(mSoundLayoutManager);
+
+        mSoundView.setAdapter(mSoundAdapter);
+
+    }
+
+    public void homeClick(View v) {
+        Intent HomeIntent = new Intent(MainActivity.this, SplashScreenActivity.class);
+        startActivity(HomeIntent);
+        EventHandlerClass.releaseSound();
+    }
+
+    public void stopSound(View v) {
+        EventHandlerClass.stopSound();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        EventHandlerClass.releaseSound();
     }
 }

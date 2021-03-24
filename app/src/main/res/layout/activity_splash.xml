@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/fond"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+        android:layout_above="@id/ivSplashLogo"
+      android:id="@+id/ivSplashTitle"
+      android:adjustViewBounds="true"
+      android:src="@drawable/soundbox"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivSplashLogo"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sb"/>
+
+</RelativeLayout>
