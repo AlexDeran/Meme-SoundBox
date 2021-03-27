@@ -15,6 +15,8 @@ public class SoundboxRecyclerAdapter extends RecyclerView.Adapter<SoundboxRecycl
 
     private ArrayList<SoundObject> soundObjects;
 
+
+
     public SoundboxRecyclerAdapter(ArrayList<SoundObject> soundObjects){
         this.soundObjects = soundObjects;
     }
@@ -59,4 +61,6 @@ public class SoundboxRecyclerAdapter extends RecyclerView.Adapter<SoundboxRecycl
             itemTextView = (TextView) itemView.findViewById(R.id.textViewItem);
         }
     }
+
+
 }

@@ -8,15 +8,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:background="@drawable/fond">
+    android:background="@drawable/clouds">
 
     <include
         layout ="@layout/actionbarmain"
         android:id="@+id/soundbox_toolbar">
     </include>
 
+    <LinearLayout
+        android:id="@+id/soundbox_searchandsort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/soundbox_toolbar"
+        >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/soundbox_searchview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:layout_weight="0.8"
+            app:iconifiedByDefault="true" />
+
+        <Button
+            android:id="@+id/soundbox_sortby"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_baseline_sort_24"
+            android:text="A-Z"
+            android:background="@drawable/shape3" />
+
+    </LinearLayout>
+
+
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_below="@id/soundbox_toolbar"
+            android:layout_below="@id/soundbox_searchandsort"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/soundbox_recycler"

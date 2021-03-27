@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    android:background="@drawable/fond"
+    android:background="@drawable/clouds"
     tools:context=".SplashScreenActivity">
 
     <ImageView
@@ -25,6 +25,6 @@
         android:id="@+id/ivSplashLogo"
         android:adjustViewBounds="true"
         android:layout_centerInParent="true"
-        android:src="@drawable/sb"/>
+        android:src="@drawable/sb2"/>
 
 </RelativeLayout>

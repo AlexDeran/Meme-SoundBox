@@ -7,11 +7,12 @@
         android:icon="@mipmap/ic_launcher_sb"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_sb_round"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/SBTheme.Base">
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/SBTheme.Base"
+            android:windowSoftInputMode="adjustResize"
             />
         <activity
             android:name=".SplashScreenActivity"

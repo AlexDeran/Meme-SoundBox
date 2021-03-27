@@ -6,12 +6,143 @@
     <string name="MV">Mister<br />MV</string>
     <string name="WTC">What the Cut</string>
     <string name="JD">Mister<br />JDAY</string>
+    
     <string-array name="soundsNames">
+
+        <item>A lot of damage</item>
+        <item>Accelère accelère</item>
+        <item>Accordéon</item>
+        <item>Ah !</item>
+        <item>Ah sa mére</item>
+        <item>Taper le péage</item>
+        <item>Ahhhhhhhhhhh</item>
+        <item>Aie aie Aie</item>
+        <item>Air horn</item>
+        <item>Allez méga fiesta</item>
+        <item>Another one</item>
+        <item>Aux ordres</item>
+        <item>Avec du savon</item>
+        <item>Be gone thot</item>
+        <item>Bitconnect WOW</item>
+        <item>BRUH</item>
         <item>BRUMAAAAA</item>
-        <item>Un but somptueux !</item>
+        <item>Buena sera</item>
+        <item>Somptueux but !</item>
+        <item>Ca va péter !</item>
+        <item>Vous allez fuir</item>
+        <item>Ça c\'était gratuit</item>
+        <item>C\'est des saucisses</item>
+        <item>C\'est honteux</item>
+        <item>C\'est non !</item>
+        <item>C\'est parti !</item>
+        <item>Pas toi qui décides</item>
+        <item>C\'est quoi ce monde ?</item>
+        <item>C\'etait sûr !</item>
+        <item>Checker moi ça</item>
+        <item>Coffin Dance</item>
+        <item>Une colère noire</item>
+        <item>Combien ?!</item>
+        <item>Comme une balle</item>
+        <item>Couhizinne</item>
         <item>Le coup de clim</item>
         <item>Le coup du foulard</item>
+        <item>CR7 Suuuuuuuu</item>
+        <item>Directed by R.B WEIDE</item>
+        <item>Deja vu</item>
+        <item>Dis les termes</item>
         <item>DOLLAR</item>
+        <item>Ecole vétérinaire</item>
+        <item>Encore !</item>
+        <item>Enorme</item>
         <item>Et peng !</item>
+        <item>Everybody is here !</item>
+        <item>Fanfare</item>
+        <item>FBI Open Up !</item>
+        <item>Gamecube intro</item>
+        <item>Go fast camion</item>
+        <item>Hello there</item>
+        <item>Here we go again CJ</item>
+        <item>J\'ai un background</item>
+        <item>Hmm hmm no no no</item>
+        <item>Un homme en colère !</item>
+        <item>Il est de retour</item>
+        <item>Inception</item>
+        <item>Indétec\ntable</item>
+        <item>It\'s time to stop</item>
+        <item>J\'adore les saucisses</item>
+        <item>J\'ai mal</item>
+        <item>J\'ai pas touché</item>
+        <item>Vous m\'\nemmerder</item>
+        <item>L\'état paiera</item>
+        <item>La boule magique</item>
+        <item>La chatte qu\'il a</item>
+        <item>La ligne 4</item>
+        <item>La rafale</item>
+        <item>Ladies and Gentlemen</item>
+        <item>le gravier</item>
+        <item>Le ranch</item>
+        <item>Le saxophone</item>
+        <item>Ceux qui parlent FR</item>
+        <item>Ma Lubullule</item>
+        <item>8 morts 6 blessés</item>
+        <item>Mlg Horns</item>
+        <item>MV Instru Coldplay</item>
+        <item>My man</item>
+        <item>Nani</item>
+        <item>Laisse pas t\'aspirer !</item>
+        <item>Nerfs tendus</item>
+        <item>No god plz no</item>
+        <item>Notre Projet</item>
+        <item>On est en guerre</item>
+        <item>Oh purée de pdt</item>
+        <item>Oh yeah yeah yes</item>
+        <item>Ohla mamacitas</item>
+        <item>Ok</item>
+        <item>Ok let\'s go</item>
+        <item>Omg wow omg</item>
+        <item>OOF</item>
+        <item>Suçage d\'ortolan</item>
+        <item>OSKUR</item>
+        <item>Oui et alors ?</item>
+        <item>Oui ma gâtée</item>
+        <item>L\'enchaine\nment</item>
+        <item>Pas ça Zinedine</item>
+        <item>La promo sur Coraya</item>
+        <item>QI de 143</item>
+        <item>Quel goût !</item>
+        <item>Quelle indignité</item>
+        <item>Qui fume ici ?</item>
+        <item>Levez la main</item>
+        <item>Quick Maths</item>
+        <item>Rire de droite</item>
+        <item>Salut mon pote  !</item>
+        <item>2d poteau Pavard!</item>
+        <item>Si ton côté = feu eteint</item>
+        <item>Sitcom laughs</item>
+        <item>STONKS</item>
+        <item>Stop it get some help</item>
+        <item>Ta gueule</item>
+        <item>They ask you how you are</item>
+        <item>To be continued</item>
+        <item>Trump bing bing</item>
+        <item>Vous êtes fatigués ?</item>
+        <item>WAT WTF ?!</item>
+        <item>We\'ll be right back</item>
+        <item>Why are we still here</item>
+        <item>Why are you runnin</item>
+        <item>Wider walk</item>
+        <item>Wii sports OOF</item>
+        <item>WOW</item>
+        <item>Ya pas de panneaux</item>
+        <item>You\'re breathtaking !</item>
+        <item>ZA WARUDO</item>
+
+
+
     </string-array>
+    
+    <string name="alphabetique">Alphabétique</string>
+    <string name="nouveaux">Nouveaux</string>
+    <string name="favoris">Favoris</string>
+
 </resources>
