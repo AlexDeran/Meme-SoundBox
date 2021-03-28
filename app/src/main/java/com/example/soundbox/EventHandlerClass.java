@@ -1,8 +1,17 @@
 package com.example.soundbox;/* Created by Alexandre Labreveux */
 
 import android.media.MediaPlayer;
+import android.os.Environment;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.PopupMenu;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class EventHandlerClass {
     private static final String LOG_TAG="EVENTHANDLER";
@@ -42,6 +51,13 @@ public class EventHandlerClass {
             mMediaPlayer = null;
         }
     }
+
+    public static void popupManager(final View view, final SoundObject soundObject){
+
+        PopupMenu popup = new PopupMenu(view.getContext(),view);
+        popup.getMenuInflater().inflate(R.menu.longclick,popup.getMenu());
+        popup.show();
+        }
 
 
 }

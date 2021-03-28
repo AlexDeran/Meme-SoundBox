@@ -8,7 +8,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:background="@drawable/clouds">
+    android:background="@drawable/clouds"
+    android:id="@+id/soundbox_layout">
 
     <include
         layout ="@layout/actionbarmain"
@@ -25,7 +26,7 @@
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/soundbox_searchview"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/shape"
@@ -39,7 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:drawableLeft="@drawable/ic_baseline_sort_24"
-            android:text="A-Z"
+            android:drawableStart="@drawable/ic_baseline_sort_24"
+            android:text="@string/az"
             android:background="@drawable/shape3" />
 
     </LinearLayout>

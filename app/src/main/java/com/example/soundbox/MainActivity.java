@@ -1,18 +1,28 @@
 package com.example.soundbox;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.provider.Settings;
 import android.text.Layout;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,6 +31,8 @@ import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton mButton_1;
     private SearchView mSearchView;
     private Button mSortBy;
+
+    private View mLayout;
 
     Toolbar mToolbar;
 
@@ -55,8 +69,9 @@ public class MainActivity extends AppCompatActivity {
        mButton_1 = findViewById(R.id.imageViewItem);
        mMuteBtn = findViewById(R.id.mute_btn);
        mSortBy = findViewById(R.id.soundbox_sortby);
+       mLayout = findViewById(R.id.soundbox_layout);
 
-       mSearchView =findViewById(R.id.soundbox_searchview);;
+       mSearchView =findViewById(R.id.soundbox_searchview);
         mToolbar = findViewById(R.id.soundbox_toolbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
