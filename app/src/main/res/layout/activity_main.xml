@@ -24,26 +24,6 @@
         android:layout_below="@id/soundbox_toolbar"
         >
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/soundbox_searchview"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape"
-            android:layout_weight="0.8"
-            app:iconifiedByDefault="true" />
-
-        <Button
-            android:id="@+id/soundbox_sortby"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:drawableLeft="@drawable/ic_baseline_sort_24"
-            android:drawableStart="@drawable/ic_baseline_sort_24"
-            android:text="@string/az"
-            android:background="@drawable/shape3" />
-
     </LinearLayout>
 
 
@@ -52,6 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/soundbox_recycler"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
             />
 
 </RelativeLayout>

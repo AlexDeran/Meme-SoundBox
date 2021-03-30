@@ -1,52 +1,18 @@
 package com.example.soundbox;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.provider.Settings;
-import android.text.Layout;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.PopupMenu;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
-
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
-    private ImageButton mMuteBtn;
-    private MediaPlayer mPlayer;
-    private ImageButton mButton_1;
-    private SearchView mSearchView;
-    private Button mSortBy;
-
-    private View mLayout;
 
     Toolbar mToolbar;
 
@@ -59,25 +25,16 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView.LayoutManager mSoundLayoutManager;
 
 
-
-    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       mButton_1 = findViewById(R.id.imageViewItem);
-       mMuteBtn = findViewById(R.id.mute_btn);
-       mSortBy = findViewById(R.id.soundbox_sortby);
-       mLayout = findViewById(R.id.soundbox_layout);
-
-       mSearchView =findViewById(R.id.soundbox_searchview);
         mToolbar = findViewById(R.id.soundbox_toolbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         List<String> nameList = Arrays.asList(getResources().getStringArray(R.array.soundsNames));
-
 
         SoundObject[] soundItems = {
                 new SoundObject(nameList.get(0), R.raw.a_lot_of_damage),
@@ -213,34 +170,15 @@ public class MainActivity extends AppCompatActivity {
 
         mSoundView = findViewById(R.id.soundbox_recycler);
 
-        mSoundLayoutManager = new GridLayoutManager(this,3);
+        mSoundLayoutManager = new GridLayoutManager(this, 3);
 
         mSoundView.setLayoutManager(mSoundLayoutManager);
 
         mSoundView.setAdapter(mSoundAdapter);
 
 
-    mSortBy.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            // Initializing the popup menu and giving the reference as current context
-            PopupMenu popupMenu = new PopupMenu(MainActivity.this, mSortBy);
-
-            // Inflating popup menu from popup_menu.xml file
-            popupMenu.getMenuInflater().inflate(R.menu.sort_menu, popupMenu.getMenu());
-            popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                @Override
-                public boolean onMenuItemClick(MenuItem menuItem) {
-                    // Toast message on menu item clicked
-                    Toast.makeText(MainActivity.this, "Vous avez appuyé sur " + menuItem.getTitle(), Toast.LENGTH_SHORT).show();
-                    return true;
-                }
-            });
-            // Showing the popup menu
-            popupMenu.show();
-        }
-    });
     }
+
 
     public void stopSound(View v) {
         EventHandlerClass.stopSound();
@@ -258,4 +196,6 @@ public class MainActivity extends AppCompatActivity {
 
         EventHandlerClass.releaseSound();
     }
+
+
 }

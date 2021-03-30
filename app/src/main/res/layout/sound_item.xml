@@ -26,15 +26,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/star_empty"
-            android:background="@color/transparent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            />
-
         <TextView
             android:id="@+id/textViewItem"
             android:layout_width="match_parent"

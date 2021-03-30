@@ -51,13 +51,4 @@ public class EventHandlerClass {
             mMediaPlayer = null;
         }
     }
-
-    public static void popupManager(final View view, final SoundObject soundObject){
-
-        PopupMenu popup = new PopupMenu(view.getContext(),view);
-        popup.getMenuInflater().inflate(R.menu.longclick,popup.getMenu());
-        popup.show();
-        }
-
-
 }
