@@ -43,7 +43,16 @@ public class SoundboxRecyclerAdapter extends RecyclerView.Adapter<SoundboxRecycl
                 EventHandlerClass.startSound(v,soundID);
             }
         });
-    }
+
+    holder.itemImageView.setOnLongClickListener(new View.OnLongClickListener() {
+        @Override
+        public boolean onLongClick(View v) {
+
+            EventHandlerClass.popupManager(v, object);
+            return true;
+        }
+    });
+}
 
     @Override
     public int getItemCount() {

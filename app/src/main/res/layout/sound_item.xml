@@ -26,6 +26,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
 
+        <Button
+            android:id="@+id/star_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/star_btn_selector"/>
+
         <TextView
             android:id="@+id/textViewItem"
             android:layout_width="match_parent"

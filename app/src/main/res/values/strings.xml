@@ -139,4 +139,12 @@
 
     </string-array>
 
+    <string name="az">A-Z</string>
+
+    <string name="alphabetique">Alphabétique</string>
+    <string name="nouveaux">Nouveaux</string>
+    <string name="favoris">Favoris</string>
+
+    <string name="add_to_fav">Ajouter aux Favoris</string>
+
 </resources>
