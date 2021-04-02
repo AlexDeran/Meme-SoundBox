@@ -173,8 +173,9 @@ public class MainActivity extends AppCompatActivity {
                 new SoundObject(nameList.get(126), R.raw.wii_spoofrts),
                 new SoundObject(nameList.get(127), R.raw.wow),
                 new SoundObject(nameList.get(128), R.raw.ya_pas_de_panneaux),
-                new SoundObject(nameList.get(129), R.raw.youre_breathtaking),
-                new SoundObject(nameList.get(130), R.raw.za_warudo)
+                new SoundObject(nameList.get(129), R.raw.yep_thats_me),
+                new SoundObject(nameList.get(130), R.raw.youre_breathtaking),
+                new SoundObject(nameList.get(131), R.raw.za_warudo)
         };
 
         soundList.addAll(Arrays.asList(soundItems));
