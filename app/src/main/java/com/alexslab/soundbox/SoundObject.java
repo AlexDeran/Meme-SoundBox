@@ -1,4 +1,4 @@
-package com.example.soundbox;/* Created by Alexandre Labreveux */
+package com.alexslab.soundbox;/* Created by Alexandre Labreveux */
 
 public class SoundObject {
 

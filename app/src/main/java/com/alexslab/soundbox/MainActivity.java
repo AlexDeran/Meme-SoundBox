@@ -1,4 +1,4 @@
-package com.example.soundbox;
+package com.alexslab.soundbox;
 
 import android.os.Bundle;
 import android.view.MenuItem;

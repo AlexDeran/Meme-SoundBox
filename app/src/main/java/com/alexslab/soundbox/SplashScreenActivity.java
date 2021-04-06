@@ -1,4 +1,4 @@
-package com.example.soundbox;
+package com.alexslab.soundbox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
