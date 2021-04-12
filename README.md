@@ -2,4 +2,4 @@
 
 An attempt to make a phone app version of my "Soundboard Project".
 
-Une version application de mon "Soundboard Project".
+Une version application mobile de "Soundboard Project".
